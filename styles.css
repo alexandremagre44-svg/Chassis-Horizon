@@ -437,8 +437,9 @@ header {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/* Note: --brand-color is defined inline on each .example-preview element to demonstrate white-label customization */
 .example-preview {
-    background: var(--brand-color);
+    background: var(--brand-color, #ccc);
     border-radius: 8px;
     padding: var(--spacing-sm);
     margin-bottom: var(--spacing-sm);
@@ -454,7 +455,7 @@ header {
 
 .preview-logo {
     font-weight: bold;
-    color: var(--brand-color);
+    color: var(--brand-color, #333);
     font-size: 1.2rem;
 }
 
